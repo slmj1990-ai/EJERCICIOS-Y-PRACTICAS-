@@ -1,0 +1,300 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "090c852d-4a46-4260-b6dd-f9b3c2c570c2",
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['apple', 'banana', 'orange']"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#PRUEBAS\n",
+    "#Creando una lista \n",
+    "\n",
+    "fruits  = [\"apple\", \"banana\", \"orange\"]\n",
+    "\n",
+    "fruits\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "65135603-777a-43c7-bf71-de5ad0bd36ba",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "vegetables = []\n",
+    "\n",
+    "# usando funcion type\n",
+    "type(vegetables)\n",
+    "\n",
+    "# Listas con diferentes elementos \n",
+    "example1 = [1, 2, 3, 4]\n",
+    "example2 = ['a', 'b', 'c']\n",
+    "example3 = [1, 'a', True]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "b345081e-bf58-465f-9e25-d2c15e19ae1f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'list'>\n",
+      "<class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "#añadiendo elementos \n",
+    "\n",
+    "x = [\"M\",\"o\",\"n\",\"t\",\"y\"]\n",
+    "\n",
+    "x[0]\n",
+    "\n",
+    "x[1]\n",
+    "\n",
+    "print (type (x))\n",
+    "print (type (x [0]))\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "6634a1fc-e48e-4f23-8a7a-0ffdcf926a2c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['apple', 'grape', 'orange']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#modificando listas de elementos \n",
+    "\n",
+    "fruits [1] = \"grape\"\n",
+    "print (fruits) #output: [\"apple\". \"grape\", \"orange\"]\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "910bb6e0-fdd6-4141-9eeb-f73c580400b5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['apple', 'grape', 'orange', 1, 2, 3]\n",
+      "['apple', 'grape', 'orange', 'apple', 'grape', 'orange', 'apple', 'grape', 'orange']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Listas operadoras\n",
+    "\n",
+    "numbers =[1, 2, 3]\n",
+    "combined = fruits + numbers\n",
+    "print (combined) #output: [\"apple\", \"grape\", \"orange\", 1, 2, 3]\n",
+    "repeated = fruits * 3\n",
+    "print (repeated) #Output: [\"apple\", \"grape\", \"orange\", \"apple\", \"grape\", \"orange\", \"apple\", \"grape\", \"orange\",]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "1c4fbae8-00af-4d2a-9a11-3d9d5fe25827",
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['apple', 'grape', 'orange', 'ananas']"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "\n",
+    "fruits + [\"ananas\"]\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "bf63dc3f-ab94-4346-8ffb-93bcc7686c14",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'orange'"
+      ]
+     },
+     "execution_count": 26,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Lista metodos y funciones\n",
+    "#len aporta el numero de elementos en la lista\n",
+    "\n",
+    "len(fruits)\n",
+    "\n",
+    "len(fruits)-1\n",
+    "\n",
+    "fruits [len(fruits) -1]\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "71954d03-9fbc-4e34-9d63-fd644cb42b61",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Incluyendo append(), remove() y sort()\n",
+    "In [ ]:\n",
+    "fruits.append (\"kiwi\") #agrga kiwi al final de la lista\n",
+    "fruits.insert (, \"mango\") #inserta mango al ímdice 1\n",
+    "fruits.remove (\"apple\") #remueve o borra apple de la lista \n",
+    "fruits.sort () #lista por orden ascendente \n",
+    "print (fruits) \n",
+    "\n",
+    "In [ ]:\n",
+    "fruits.index (\"mango\") #devuelve el primer valor al índice   \n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "1cb36d74-63e3-4b0e-b3c2-1de71bde5269",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['banana', 'orange']"
+      ]
+     },
+     "execution_count": 27,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "fruits = [\"apple\", \"banana\", \"orange\"]\n",
+    "fruits.remove(\"apple\")\n",
+    "fruits\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "45a5f7d7-ddb7-4526-baad-e32c4208862b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['d', 'e']"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x = ['a', 'b', 'c', 'd', 'e', 'f', 'g']\n",
+    "x[:] #regresa a la lista completa\n",
+    "x[:3] #regresa a nueva lista que incluye ilementos en índices 0,1,2\n",
+    "x[3:] #regresa a nueva lista que incluya elementos en indices 3,4,5,6\n",
+    "x[3:5] #regresa a nueva lista que incluya elementos en índices 3,4\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "fbd5bb05-c415-4fb5-a833-0feecec8068a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['c', 'e']"
+      ]
+     },
+     "execution_count": 29,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x[::2] #regresa a nueva lista que incluya cada segundo elemento comenzando por indice 0 \n",
+    "x[2:5:2] #regresa a nueva lista que incluya elementos en 2 ,4 con un paso en 2 \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2cb592a4-38a5-4ac6-9bee-181647bce00e",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "anaconda-2025.12-py312",
+   "language": "python",
+   "name": "conda-env-anaconda-2025.12-py312-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
